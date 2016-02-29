@@ -1036,6 +1036,19 @@ a.mfn-link-6:before {
 .header-plain #Top_bar a.button.action_button {
     border-color: #F2F2F2;
 }
+
+.offer .offer_li {
+    background-color: #fff;
+}
+
+.right {
+    text-align: right;
+}
+
+#team hr {
+    width: 100% !important;
+}
+
 #Top_bar .menu > li ul {
     background-color: #F2F2F2;
 }
