@@ -424,18 +424,18 @@ body.nice-scroll:not(.layout-boxed) { padding-right:10px !important;}
 /* Section: Highlight
 ================================================== */
 .highlight-left,
-.highlight-right { position:relative;}
+.highlight-right,.highlight-right-white { position:relative;}
 .highlight-left:after,
-.highlight-right:after { content:""; position:absolute; width:50%; height:100%; top:0; }
+.highlight-right:after,.highlight-right-white:after { content:""; position:absolute; width:50%; height:100%; top:0; }
 .highlight-left:after { left:0; }
-.highlight-right:after { right:0; }
+.highlight-right:after,.highlight-right-white:after { right:0; }
 .highlight-left .section_wrapper,
-.highlight-right .section_wrapper { z-index:2;}
+.highlight-right .section_wrapper,.highlight-right-white .section_wrapper { z-index:2;}
 
 @media only screen and (max-width: 767px) 
 {
 	.highlight-left:after,
-	.highlight-right:after { content:none;}
+	.highlight-right:after,.highlight-right-white:after { content:none;}
 }	
 
 /* Section: Portfolio

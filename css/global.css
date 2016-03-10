@@ -2921,11 +2921,14 @@ table.simple tr:hover td {
     margin: 30px 12px 30px 30px;
 }
 
+.offer .offer_li .desc_wrapper .view-more {
+    text-align: center;
+}
+
 .offer .offer_li .desc_wrapper .title {
     margin-bottom: 30px;
     position: relative;
     min-height: 43px;
-    padding-right: 160px;
 }
 
 .offer .offer_li .desc_wrapper .title h3 {

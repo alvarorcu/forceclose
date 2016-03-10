@@ -949,10 +949,18 @@ a.mfn-link-6:before {
 .highlight-right:after {
     background: #e8ca00;
 }
+
+.highlight-right-white:after {
+    background: #fff;
+}
+
 @media only screen and (max-width: 767px) {
     .highlight-left .wrap:first-child,
     .highlight-right .wrap:last-child {
         background: #e8ca00;
+    }
+    .highlight-right-white .wrap:last-child {
+        background: #fff;
     }
 }
 #Header .top_bar_left,
@@ -1043,6 +1051,31 @@ a.mfn-link-6:before {
 
 .right {
     text-align: right;
+}
+
+.flv_style_1 {
+    padding: 50px 10px 0;
+}
+
+.flv_style_1 ul.list_mixed li:after, .flv_style_1 ul.list_check li:after {
+
+    height: 0px;
+    overflow: hidden;
+    background: transparent;
+    display:none;
+}
+
+.valign-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.valign {
+    display: block;
 }
 
 #team hr {
