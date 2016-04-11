@@ -1,0 +1,326 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.container-fluid {
+	padding: 0;
+}
+a:hover, a:focus {
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+.section {
+	margin: 8em 0;
+}
+
+h3 {
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.h-title {
+	text-align: center;	
+	margin-bottom: 3em;
+}
+
+.h-title h1 {
+	padding-right: 52px;
+}
+
+.h-title h3 {
+	padding: 0 25px;
+    max-width: 652px;
+	margin: auto;
+}
+
+.img-cap {
+	width: 52px;
+    height: auto;
+    position: relative;
+    left: 25px;
+    top: 5px;
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+.navbar {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.navbar-inverse {
+	background-color: transparent;
+	border: none;
+	background: none;
+	color: #fff;
+	margin-top: 2em;
+	font-weight: 300;
+}
+
+.navbar-inverse ul {
+	margin-top: 10px;
+}
+
+.navbar-inverse a, .navbar-inverse li a{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-inverse li a {
+	padding: 0 20px;
+}
+
+.navbar-inverse li:not(:last-child){
+	border-right: solid 1px #fff;
+}
+
+.navbar-inverse a {
+	color: #fff !important;
+}
+
+.navbar-inverse a:hover {
+	color: #9d9d9d !important;
+}
+
+.navbar .logo {
+	width: 121px;
+	height: 32px;
+	background: url('../img/logo.png') no-repeat center center;
+}
+
+.navbar-toggle {
+	margin-top: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color:#fff !important;
+}
+
+/* ==========================================================================
+   Inicio
+   ========================================================================== */
+
+#inicio {
+	background: url('../img/prin-background.png') no-repeat center center;
+	background-size: 100% auto;
+	background-size: cover;
+	min-height: 580px;
+	text-align: center;
+}
+
+.title-h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 4.5em;
+	margin: 2em auto 1.8em;
+	width: 330px;
+	padding: 0 10px;
+	border: solid 3px #ffb322;
+	border-top: none;
+	border-bottom: none;
+}
+
+.mouse-see{
+	text-align: center;
+	color:#fff;
+}
+
+.mouse-icon {
+	width: 53px;
+	height: 53px;
+	background: url('../img/mouse-icon.png') no-repeat center center;
+	margin:auto;
+}
+
+.mouse-see p{
+	font-weight: 300;
+	margin-top: 10px;
+	font-size: 0.8em;
+}
+
+/* ==========================================================================
+   Digitaliza
+   ========================================================================== */
+
+#digitaliza .container {
+	width: 850px;
+}
+
+.col-box {
+	border: 1px solid #95989a;
+	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	-ms-border-radius: 10px;
+  	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin: 2em 0.666666%;
+	text-align: center;
+	padding: 5em 2.5em;
+	width: 32%;
+	min-height: 577px;
+}
+
+.hover-box {
+	display:none;
+	background-color: #ffb62d;
+	position: absolute
+}
+
+.col-box img {
+	height: 150px;
+	width: auto;
+	margin-bottom: 5px;
+}
+
+.col-box hr {
+	border: 3px solid #ffb322;
+	margin: 20px 0;
+}
+
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(255, 179, 34, 0.9);
+  background: url('../img/hover-bg.png') no-repeat center center;
+  background-size: 100% auto;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+
+a.expand {
+	font-family: 'Bebas Neue';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 165px;
+    height: 50px;
+    border: solid 3px #000;
+    text-align: center;
+    color: #000;
+    line-height: 46px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+.overlay a.expand {
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.col-box.hover .overlay {
+  opacity: 1;
+}
+.col-box.hover .overlay a.expand {
+  top: 50%;
+  margin-top: -30px;
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Frase
+   ========================================================================== */
+
+#frase {
+	background: rgb(255, 179, 34);
+  	background: url('../img/frase-bg.png') no-repeat center center;
+  	background-size: 100% auto;
+  	background-size: cover;
+  	text-align: center;
+}
+
+.sep-line {
+	margin: auto;
+	height: 70px;
+}
+
+.white {
+	color:#fff;
+	max-width: 900px;
+	margin: 1em auto 0.4em;
+	padding-right: 52px;
+}
+
+.black {
+	color:#000;
+	border-top: solid 4px #000;
+	width: 50%;
+	line-height: 1.25;
+	margin:0 auto 1em;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	padding: 1em;
+	margin: auto;
+	text-align: center;
+	background-color: #ffb322;
+	color: #000;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 992px) {
+	.col-box {
+		width: 98%;
+		margin: 2em 1%;
+		min-height: auto;
+	}
+}
+
+@media (min-width: 740px) {
+
+}
+
+

@@ -1,870 +1,214 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <title>Force Close</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
-
-    <!-- FONTS -->
-    <link rel='stylesheet' id='Roboto-css' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
-    <link rel='stylesheet' id='Patua+One-css' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
-    <link rel='stylesheet' id='Raleway-css' href='http://fonts.googleapis.com/css?family=Raleway:200,400,400italic,700,700italic,900&amp;ver=4.4'>
-    <link rel='stylesheet' id='Biryani-css' href='http://fonts.googleapis.com/css?family=Biryani:200,400,400italic,700,700italic,900&amp;ver=4.4'>
-
-    <!-- CSS -->
-    <link rel='stylesheet' id='global-css' href='css/global.css'>
-    <link rel='stylesheet' id='structure-css' href='content/firm/css/structure.css'>
-    <link rel='stylesheet' id='local-css' href='content/firm/css/firm.css'>
-    <link rel='stylesheet' id='custom-css' href='content/firm/css/custom.css'>
-
-</head>
-
-<body class="home layout-full-width nice-scroll-on mobile-tb-left button-flat no-content-padding no-table-hover header-stack header-center minimalist-header-no sticky-header sticky-white ab-hide subheader-both-center menu-line-below-80-1 menuo-no-borders footer-copy-center tr-header tr-menu tr-content">
-    <!-- Main Theme Wrapper -->
-    <div id="Wrapper">
-        <!-- Header Wrapper -->
-        <div id="Header_wrapper">
-            <!-- Header -->
-            <header id="Header">
-
-                <!-- Header -  Logo and Menu area -->
-                <div id="Top_bar" class="loading">
-                    <div class="container">
-                        <div class="column one">
-                            <div class="top_bar_left clearfix">
-                                <!-- Logo-->
-                                <div class="logo">
-                                    <a id="logo" href="index.html" title="Force Close"><img class="logo-main scale-with-grid" src="content/firm/images/logo.png" alt="Force Close" /><img class="logo-sticky scale-with-grid" src="content/firm/images/logo.png" alt="Force Close" /><img class="logo-mobile scale-with-grid" src="content/firm/images/logo.png" alt="Force Close" />
-                                    </a>
-                                </div>
-                                <!-- Main menu-->
-                                <div class="menu_wrapper">
-                                    <nav id="menu" class="menu-main-menu-container">
-                                        <ul id="menu-main-menu" class="menu">
-                                            <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item">
-                                                <a href="index.html"><span>Inicio</span></a>
-                                            </li>
-                                            <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/firm/apps.html"><span>Apps</span></a>
-                                            </li>
-                                            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/firm/webs.html"><span>Webs</span></a>
-                                            </li>
-                                            <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/firm/control.html"><span>Control de Acceso</span></a>
-                                            </li>
-                                            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/firm/contactanos.html"><span>Contáctanos</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav><a class="responsive-menu-toggle " href="#"><i class="icon-menu"></i></a>
-                                </div>
-                                <!-- Secondary menu area - only for certain pages -->
-                                <div class="secondary_menu_wrapper"></div>
-                                <!-- Banner area - only for certain pages-->
-                                <div class="banner_wrapper"></div>
-                                <!-- Header Searchform area-->
-                                <div class="search_wrapper">
-                                    <form method="get" id="searchform" action="#">
-                                        <i class="icon_search icon-search"></i><a href="#" class="icon_close"><i class="icon-cancel"></i></a>
-                                        <input type="text" class="field" name="s" id="s" placeholder="Enter your search" />
-                                        <input type="submit" class="submit" value="" style="display:none;" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <!-- Main Content -->
-        <div id="Content">
-            <div class="content_wrapper clearfix">
-                <div class="sections_group">
-                    <div class="entry-content">
-                        <div class="section mcb-section full-screen " style="padding-top:50px; padding-bottom:80px; ">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one clearfix">
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line" style="margin: 0 auto 80px;" />
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr align_center">
-                                            <h1 style="color: #fff; margin: 0;">IMPROVE WITH
-                                                <br>
-                                                TECHNOLOGY
-                                            </h1>
-                                        </div>
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr align_center">
-                                            <div style="width: 100%; height: 1px; background: #fff;"></div>
-                                        </div>
-                                    </div>
-                                    <!-- One Sixth (1/6) Column -->
-                                    <div class="column mcb-column one-sixth column_placeholder">
-                                        <div class="placeholder">
-                                            &nbsp;
-                                        </div>
-                                    </div>
-                                    <div class="column mcb-column two-third column_column column-margin-">
-                                            <div class="column_attr align_center" style="">
-                                                <h4 style="color: #fff;">Creamos lo que tu empresa necesita</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-0px">
-                                        <div class="column_attr align_center">
-                                            <a class="button button_large button_js scroll" href="#servicios"><span class="button_label">Ver más</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="servicios" class="section mcb-section section-border-top " style="padding-top:120px; padding-bottom:80px; background-color:rgba(255,255,255,.9)" >
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one clearfix"  >
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr align_center">
-                                            <h2>Dale a tu Negocio las Herramientas</h2>
-                                            <p class="big">
-                                                Creemos que la tecnología digital y electrónica son el comienzo de tu crecimiento y diferenciación en el mercado.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" target="_blank">
-                                        <div class="column mcb-column one-fourth column_column column-margin-">
-                                            <div class="quick_fact">
-                                                <div class="number-wrapper">
-                                                    <span class="single_icon icon_center"><i class="number icon-mobile"></i></span>
-                                                </div><h3 class="title">Aplicaciones Móviles</h3>
-                                                <hr class="hr_narrow" />
-                                                <div class="desc">
-                                                    Tener un app que te acerque a tus clientes, que resuelva, ordene y agilice procesos en tu negocio, que tenga una experiencia de usuario única.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <!-- Counter area-->
-                                            <div class="quick_fact">
-                                                <div class="number-wrapper">
-                                                    <span class="single_icon icon_center"><i class="number icon-monitor"></i></span>
-                                                </div><h3 class="title">Desarrollo Web</h3>
-                                                <hr class="hr_narrow" />
-                                                <div class="desc">
-                                                    Diseño y desarrollo a medida de páginas web, aplicaciones web y servicios web.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <!-- Counter area-->
-                                            <div class="quick_fact">
-                                                <div class="number-wrapper">
-                                                    <span class="single_icon icon_center"><i class="number icon-cloud-thunder"></i></span>
-                                                </div><h3 class="title">Control de Acceso</h3>
-                                                <hr class="hr_narrow" />
-                                                <div class="desc">
-                                                    Con la ayuda de distintas tecnologías de registro y marcación de asistencias desarrollamos un completo sistema y te damos el control y reporte de los ingresos de personas a tu empresa.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <!-- Counter area-->
-                                            <div class="quick_fact">
-                                                <div class="number-wrapper">
-                                                    <span class="single_icon icon_center"><i class="number icon-pencil"></i></span>
-                                                </div><h3 class="title">Imagen Corporativa</h3>
-                                                <hr class="hr_narrow" />
-                                                <div class="desc">
-                                                    Recién comienzas con tu negocio, te falta potenciar o crear un logo, quieres un mejor brochure, vamos a darle la imagen que quieres darle a tu empresa.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section section-border-top " style="padding-top:0px; padding-bottom:0px; background-color:rgba(255,230,0,.9)" id="text">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one column-margin-0px clearfix">
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_image ">
-                                        <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                            <div class="image_wrapper"><img class="scale-with-grid" src="content/firm/images/home_firm_sep.png" alt="" width="1" height="98" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line" style="margin: 0 auto 30px;" />
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr align_center" style=" padding:0 5%;">
-                                            <hr class="no_line" style="margin: 0 auto 20px;" />
-                                            <h2><span style="color: #fff;">Somos una empresa de innovación</span> y hacemos que la tecnología sea el socio perfecto para tu negocio.
-                                            </h2>
-                                            <br>
-                                            <h2 style="font-weight: 200;">Generamos valor agregado.</h2>
-                                            <hr class="no_line" style="margin: 0 auto 40px;" />
-                                        </div>
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_divider ">
-                                        <hr class="no_line" style="margin: 0 auto 20px;" />
-                                    </div>
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_image ">
-                                        <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                            <div class="image_wrapper"><img class="scale-with-grid" src="content/firm/images/home_firm_sep.png" alt="" width="1" height="98" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section section-border-top " style="padding-top:120px; padding-bottom:80px; background-color:rgba(227,229,232,.95)">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one clearfix">
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr">
-                                            <h2>Algunos de nuestros clientes</h2>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>Técnica Reunidas</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one-fourth column_our_team">
-                                        <div class="team team_vertical">
-                                            <div class="no_link scale-with-grid">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_1.jpg" alt="Cliente 1">
-                                                </div>
-                                            </div>
-                                            <div class="desc_wrapper aligncenter">
-                                                <h4>UPLC</h4>
-                                                <p class="subtitle">
-                                                    Desarrollo web y móvil
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one column_clients">
-                                        <ul class="clients clearfix ">
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_1.png" class="scale-with-grid wp-post-image" alt="client_1">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 2">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_2.png" class="scale-with-grid wp-post-image" alt="client_2">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 3">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_3.png" class="scale-with-grid wp-post-image" alt="client_3">
-                                                    </div></a> 
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 4">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_4.png" class="scale-with-grid wp-post-image" alt="client_4">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 5">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_5.png" class="scale-with-grid wp-post-image" alt="client_5">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 6">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_6.png" class="scale-with-grid wp-post-image" alt="client_6">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 1">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_1.png" class="scale-with-grid wp-post-image" alt="client_1">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 2">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_2.png" class="scale-with-grid wp-post-image" alt="client_2">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 3">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_3.png" class="scale-with-grid wp-post-image" alt="client_3">
-                                                    </div></a> 
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 4">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_4.png" class="scale-with-grid wp-post-image" alt="client_4">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 5">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_5.png" class="scale-with-grid wp-post-image" alt="client_5">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                            <li style="width:16.667%">
-                                                <div class="client_wrapper">
-                                                    <a target="_blank" href="#" title="Client 6">
-                                                    <div class="gs-wrapper"><img width="145" height="75" src="images/client_6.png" class="scale-with-grid wp-post-image" alt="client_6">
-                                                    </div></a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section section-border-top " style="padding-top:120px; padding-bottom:80px; background-color:rgba(6,12,23,.7); background-image:url(content/firm/images/home_firm_pattern1.png); background-repeat:repeat; background-position:center top; ">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one clearfix">
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr align_center">
-                                            <h2 style="color: #fff;">Nosotros lo Hicimos</h2>
-                                            <p style="color: #fff;">
-                                                Conoce algunos de los proyectos que hemos desarrollado.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="section full-width flv_sections_3">
-                                <div class="section_wrapper clearfix">
-                                    <div class="items_group clearfix">
-                                        <div class="column one column_offer">
-                                            <div class="offer">
-                                                <ul class="offer_ul">
-                                                    <li class="offer_li">
-                                                        <div class="image_wrapper"><img width="952" height="537" src="images/be-photo.jpg" class="scale-with-grid wp-post-image" alt="be-photo">
-                                                        </div>
-                                                        <div class="desc_wrapper">
-                                                            <div class="title">
-                                                                <h3>Instalación de sistema de pago y asistencias</h3>
-                                                            </div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <span class="big">Instalación de sistema privados de pago y asistencias con tecnología RFID y tarjetas de proximidad, unido a puntos de venta en el complejo de viviendas petrolero de PetroPerú, ubicado en Punta Arenas - Talara.</span>
-
-                                                                </p>
-                                                                <div class="hr_dots">.
-                                                                    <span></span><span></span><span></span>
-                                                                </div><h5>Características:</h5>
-                                                                <ul class="list_mixed">
-                                                                    <li class="list_check">
-                                                                        Control de ingreso a diferentes establecimientos.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Marcación de consumo en los comedores.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Sistema de pago ForceClose Monedero.
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="view-more"><a href="#" class="button button_js" target="_blank"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Ver fotos</span></a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="offer_li">
-                                                        <div class="image_wrapper"><img width="952" height="537" src="images/be-photo.jpg" class="scale-with-grid wp-post-image" alt="be-photo">
-                                                        </div>
-                                                        <div class="desc_wrapper">
-                                                            <div class="title">
-                                                                <h3>Sportmatics</h3>
-                                                            </div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <span class="big">Intalación de un sistema encargado de manejar el Front y Back del negocio de la academia de natación.</span>
-
-                                                                </p>
-                                                                <div class="hr_dots">.
-                                                                    <span></span><span></span><span></span>
-                                                                </div><h5>Características:</h5>
-                                                                <ul class="list_mixed">
-                                                                    <li class="list_check">
-                                                                        Control de ingreso para usuarios.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Marcación con tarjetas RFID.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Administrador de clientes.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Sistema de contabilidad y análisis de negocio.
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="view-more"><a href="#" class="button button_js" target="_blank"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Ver demo</span></a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="offer_li">
-                                                        <div class="image_wrapper"><img width="952" height="537" src="images/be-photo.jpg" class="scale-with-grid wp-post-image" alt="be-photo">
-                                                        </div>
-                                                        <div class="desc_wrapper">
-                                                            <div class="title">
-                                                                <h3>Automatización de olimpiadas escolares SchoolGames</h3>
-                                                            </div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <span class="big">Aplicación móvil + Software desktop para la organización de olimpiadas escolares.</span>
-
-                                                                </p>
-                                                                <div class="hr_dots">.
-                                                                    <span></span><span></span><span></span>
-                                                                </div><h5>Características:</h5>
-                                                                <ul class="list_mixed">
-                                                                    <li class="list_check">
-                                                                        Generación automática de fixture y programación de las olimpiadas.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Aplicación móvil interna para uso de los alumnos.
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="view-more"><a href="#" class="button button_js" target="_blank"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Ver demo</span></a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="offer_li">
-                                                        <div class="image_wrapper"><img width="952" height="537" src="images/be-photo.jpg" class="scale-with-grid wp-post-image" alt="be-photo">
-                                                        </div>
-                                                        <div class="desc_wrapper">
-                                                            <div class="title">
-                                                                <h3>Ferias de Talara para la industria del petróleo</h3>
-                                                            </div>
-                                                            <div class="desc">
-                                                                <p>
-                                                                    <span class="big">Fuimos parte de las 4 primeras ferias de talara para la industria del petroleo y dimos el soporte tecnológico para esta “Feria Tecnológica de Petroleo y Gas”.</span>
-
-                                                                </p>
-                                                                <div class="hr_dots">.
-                                                                    <span></span><span></span><span></span>
-                                                                </div><h5>Soporte tecnológico:</h5>
-                                                                <ul class="list_mixed">
-                                                                    <li class="list_check">
-                                                                        Web para el evento anual.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Aplicación móvil para concurso de conocimientos.
-                                                                    </li>
-                                                                    <li class="list_check">
-                                                                        Control de acceso con tecnología RFID.
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="view-more"><a href="#" class="button button_js" target="_blank"><span class="button_icon"><i class="icon-layout"></i></span><span class="button_label">Ver demo</span></a></div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </li>                                                     
-                                            
-                                                </ul><a class="button button_large button_js slider_prev" href="#"><span class="button_icon"><i class="icon-up-open-big"></i></span></a>
-                                                <div class="slider_pagination">
-                                                    <span class="current">1</span> / <span class="count">1</span>
-                                                </div><a class="button button_large button_js slider_next" href="#"><span class="button_icon"><i class="icon-down-open-big"></i></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="section mcb-section section-border-top " style="padding-top:120px; padding-bottom:80px; background-color:rgba(255,255,255,.9)" id="team">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one clearfix">
-                                    <!-- One Full Row-->
-                                    <div class="column mcb-column one column_column column-margin-">
-                                        <div class="column_attr">
-                                            <h2>Nuestro Equipo</h2>
-                                        </div>
-                                    </div>
-                                    <!-- One (1) Column -->
-                                    <div class="column one column_our_team_list">
-                                        <!-- Team Member Area -->
-                                        <div class="team team_list clearfix">
-                                            <!-- One Fourth (1/4) Column -->
-                                            <div class="column one-fourth">
-                                                <div class="no_link scale-with-grid">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_3.jpg" alt="Jason Collins">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- One Second (3/4) Column -->
-                                            <div class="column three-fourth">
-                                                <div class="desc_wrapper">
-                                                    <h4>Jason Collins</h4>
-                                                    <p class="subtitle">
-                                                        CEO
-                                                    </p>
-                                                    <hr>
-                                                    <div class="desc">
-                                                        <p>
-                                                            <span class="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem.</span>
-                                                        </p>
-                                                        Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra. mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one column_our_team_list">
-                                        <!-- Team Member Area -->
-                                        <div class="team team_list clearfix">
-                                            <!-- One Second (3/4) Column -->
-                                            <div class="column three-fourth">
-                                                <div class="desc_wrapper right">
-                                                    <h4>Jason Collins</h4>
-                                                    <p class="subtitle">
-                                                        CEO
-                                                    </p>
-                                                    <hr>
-                                                    <div class="desc">
-                                                        <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem.
-                                                        </p>
-                                                        Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra. mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- One Fourth (1/4) Column -->
-                                            <div class="column one-fourth">
-                                                <div class="no_link scale-with-grid">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_3.jpg" alt="Jason Collins">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one column_our_team_list">
-                                        <!-- Team Member Area -->
-                                        <div class="team team_list clearfix">
-                                            <!-- One Fourth (1/4) Column -->
-                                            <div class="column one-fourth">
-                                                <div class="no_link scale-with-grid">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_3.jpg" alt="Jason Collins">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- One Second (3/4) Column -->
-                                            <div class="column three-fourth">
-                                                <div class="desc_wrapper">
-                                                    <h4>Jason Collins</h4>
-                                                    <p class="subtitle">
-                                                        CEO
-                                                    </p>
-                                                    <hr>
-                                                    <div class="desc">
-                                                        <p>
-                                                            <span class="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem.</span>
-                                                        </p>
-                                                        Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra. mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column one column_our_team_list">
-                                        <!-- Team Member Area -->
-                                        <div class="team team_list clearfix">
-                                            <!-- One Second (3/4) Column -->
-                                            <div class="column three-fourth">
-                                                <div class="desc_wrapper right">
-                                                    <h4>Jason Collins</h4>
-                                                    <p class="subtitle">
-                                                        CEO
-                                                    </p>
-                                                    <hr>
-                                                    <div class="desc">
-                                                        <p>
-                                                            <span class="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit tortor, dictum in gravida nec, aliquet non lorem.</span>
-                                                        </p>
-                                                        Donec vestibulum justo a diam ultricies pellentesque. Quisque mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula nibh, molestie id viverra. mattis diam vel lacus tincidunt elementum. Sed vitae adipiscing turpis. Aenean ligula.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- One Fourth (1/4) Column -->
-                                            <div class="column one-fourth">
-                                                <div class="no_link scale-with-grid">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="images/our_team_3.jpg" alt="Jason Collins">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="section the_content no_content">
-                            <div class="section_wrapper">
-                                <div class="the_content_wrapper"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container-fluid" id="inicio">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="#"></a>
             </div>
-        </div>
-        <!-- Footer-->
-        <footer id="Footer" class="clearfix">
-            <!-- Footer copyright-->
-            <div class="footer_copy">
-                <div class="container">
-                    <div class="column one">
 
-                        <div class="copyright">
-                            &copy; 2016 Force Close
-                        </div>
-                        <!--Social info area-->
-                        <ul class="social"></ul>
-                    </div>
-                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">APPS</a></li>
+                <li><a href="#">WEBS</a></li>
+                <li><a href="#">CONTROL DE ACCESOS</a></li>
+                <li><a href="#">CONTÁCTANOS</a></li>
+
+                
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-->
+        </nav>
+        <div class="container">
+          <div class="row light">
+            <h1 class="title-h1">IMPROVE WITH<br>
+            TECHNOLOGY
+            </h1>
+            <a class="mouse-see" href="#">
+              <div class="mouse-icon">
+              </div>
+              <p>VER MÁS</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="section" id="digitaliza">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="h-title">
+            <h1><img src="img/cap.png" class="img-cap">DIGITALIZA TU MUNDO</h1>
+            <h3>CREEMOS EN LA TECNOLOGÍA DIGITAL Y ELECTRÓNICA COMO LA NUEVA VÍA PARA DIFERENCIAR<b id="message-ch">TE</b> DEL RESTO.</h3>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/mobile-i.png">
+            <hr>
+            <h2>APLICACIONES<br>MÓVILES</h2>
+            <p>Tener un app que te acerque a tus clientes, resuelva, ordene y agilice procesos en tu negocio, que tenga una experiencia de usuario única.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
             </div>
-        </footer>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/web-i.png">
+            <hr>
+            <h2>DESARROLLO<br>WEB</h2>
+            <p>Contar con un socio que trabaje por ti 24 horas hecho a tu medida.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/access-i.png">
+            <hr>
+            <h2>CONTROL DE<br>ACCESOS</h2>
+            <p>Disponer de un sistema eficaz que ponga en tus manos información del flujo de tus clientes y colaboradores.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- JS -->
 
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <div class="section" id="frase">
+      <div class="container">
+        <div class="row">
+          <img src="img/sep-line.png" class="sep-line" style="height=">
+          <h1 class="white"><img src="img/cap.png" class="img-cap">SOMOS INNOVADORES Y HACEMOS QUE LA TECNOLOGÍA SEA EL SOCIO PERFECTO PARA TU NEGOCIO.</h1>
+          <h1 class="black">GENERAMOS VALOR AGREGADO.</h1>
+          <img src="img/sep-line.png" class="sep-line">
+        </div>
+      </div>
+    </div>
 
-    <script type="text/javascript" src="js/mfn.menu.js"></script>
-    <script type="text/javascript" src="js/jquery.plugins.js"></script>
-    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/animations/animations.js"></script>
-    <script type="text/javascript" src="js/translate3d.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <div class="section" id="clientes">
+      <div class="container">
+        <div class="row">
+          <div class="h-title">
+            <h1><img src="img/cap.png" class="img-cap">ALGUNOS DE NUESTROS CLIENTES</h1>
+            <h3>ESTAS MARCAS CONFIARON EN FORCE CLOSE</h3>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/mobile-i.png">
+            <hr>
+            <h2>APLICACIONES<br>MÓVILES</h2>
+            <p>Tener un app que te acerque a tus clientes, resuelva, ordene y agilice procesos en tu negocio, que tenga una experiencia de usuario única.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/web-i.png">
+            <hr>
+            <h2>DESARROLLO<br>WEB</h2>
+            <p>Contar con un socio que trabaje por ti 24 horas hecho a tu medida.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
+            </div>
+          </div>
+          <div class="col-md-4 col-box hover-effect">
+            <img src="img/access-i.png">
+            <hr>
+            <h2>CONTROL DE<br>ACCESOS</h2>
+            <p>Disponer de un sistema eficaz que ponga en tus manos información del flujo de tus clientes y colaboradores.</p>
+            <div class="overlay">
+                <a href="#" class="expand">VER MÁS</a>
+                <a class="close-overlay hidden">x</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script>
-        jQuery(window).load(function() {
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            if (retina) {
-                var retinaEl = jQuery("#logo img.logo-main");
-                var retinaLogoW = retinaEl.width();
-                var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "content/firm/images/retina-logo.png").width(retinaLogoW).height(retinaLogoH);
-                var stickyEl = jQuery("#logo img.logo-sticky");
-                var stickyLogoW = stickyEl.width();
-                var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "content/firm/images/retina-logo.png").width(stickyLogoW).height(stickyLogoH);
-                var mobileEl = jQuery("#logo img.logo-mobile");
-                var mobileLogoW = mobileEl.width();
-                var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "content/firm/images/retina-logo.png").width(mobileLogoW).height(mobileLogoH);
-            }
+    <footer class="container-fluid" >
+      <h5>&copy; FORCE CLOSE 2016</h5>
+    </footer>
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+        <script>
+        $( document ).ready(function() {
+            nextMsg();
+            
+            if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".hover-effect").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".hover-effect").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
         });
-    </script>
-</body>
-
+        </script>
+    </body>
 </html>
