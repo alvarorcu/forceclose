@@ -317,10 +317,14 @@ footer {
 		margin: 2em 1%;
 		min-height: auto;
 	}
+	#digitaliza .container {
+		width: 750px;
+	}
 }
 
-@media (min-width: 740px) {
-
+@media (max-width: 778px) {
+  #digitaliza .container {
+    width: 100%;
+  }
 }
-
 
