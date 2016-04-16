@@ -400,6 +400,36 @@ a.expand {
 
 
 /* ==========================================================================
+   Nosotros
+   ========================================================================== */
+#nosotros {
+	background: #000;
+  	background: url('../img/nosotros.png') no-repeat center center;
+  	background-size: 100% auto;
+  	background-size: cover;
+  	text-align: center;
+}
+
+.big {
+	font-size: 110px;
+	margin: 0.4em auto 0.25em;
+}
+
+
+.yellow {
+	color:#ffb322;
+	border-top: solid 7px #ffb322;
+	width: 60%;
+	line-height: 3;
+	margin:0 auto 1em;
+}
+
+.white-line {
+	color:#fff;
+}
+
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
