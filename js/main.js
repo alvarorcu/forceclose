@@ -18,3 +18,25 @@ var messages = [
     "TE",
     "NOS"
 ].reverse();
+
+
+/*! Main */
+$( document ).ready(function() {
+  
+    // Fixa navbar ao ultrapassa-lo
+    var start = $('#inicio'),
+            distance = start.position().top + start.outerHeight(true) - 200;
+        $window = $(window);
+    var navbar = $('#inicio nav'),
+            navheight = navbar.outerHeight(true);
+
+    $window.scroll(function() {
+        if ($window.scrollTop() >= distance) {
+            navbar.removeClass('navbar-fixed-top').removeClass('navbar-inverse').addClass('navbar-fixed-top');
+            $("body").css("padding-top", navheight+"px");
+        } else {
+            navbar.removeClass('navbar-fixed-top').addClass('navbar-inverse');
+            $("body").css("padding-top", "0px");
+        }
+    });
+});
