@@ -106,8 +106,8 @@ h3 {
 	color: #9d9d9d !important;
 }
 
-.navbar .logo {
-	width: 200px;
+.navbar .logo, .navbar .logo img{
+	width: 180px;
     height: auto;
 }
 
@@ -135,7 +135,7 @@ h3 {
 	color: #fff;
 	text-align: center;
 	font-size: 6.5em;
-	margin: 2em auto 1.8em;
+	margin: auto;
 	width: 470px;
 	padding: 0 10px;
 	border: solid 4px #ffb322;
@@ -148,6 +148,10 @@ h3 {
 	color:#fff;
 	font-size: 25px;
 }
+.mouse-see, .mouse-see:focus {
+	outline: 0px solid transparent;
+}
+
 
 .mouse-icon {
 	margin: auto;
@@ -160,6 +164,10 @@ h3 {
 	font-size: 16px;
 }
 
+.bot-center {
+	position:absolute;
+	bottom:0px;
+}
 /* ==========================================================================
    Digitaliza
    ========================================================================== */
@@ -398,6 +406,24 @@ a.expand {
   opacity: 1;
 }
 
+a.close-gal {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  border: 3px solid #7F7F7F;
+  color: #7F7F7F;
+  line-height: 43px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
 
 /* ==========================================================================
    Nosotros
@@ -408,11 +434,13 @@ a.expand {
   	background-size: 100% auto;
   	background-size: cover;
   	text-align: center;
+  	margin-bottom: 0;
 }
 
 .big {
 	font-size: 110px;
 	margin: 0.4em auto 0.25em;
+	padding: 0;
 }
 
 
@@ -426,8 +454,111 @@ a.expand {
 
 .white-line {
 	color:#fff;
+	margin:25px 0;
 }
 
+.wemade-gallery {
+	height: 100%;
+	position: relative;
+}
+
+.wemade-gallery .gal-col {
+	width: 33.3333333%;
+	position: relative;
+	display: inline-block;
+	float:left;
+}
+
+.gal-col img {
+	width: 100%;
+	height: auto;
+}
+
+.gal-el {
+	position: relative;
+	display: block;
+}
+.gal-el .overlay , .gal-col .overlay {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.gal-el.hover .overlay , .gal-col.hover .overlay {
+  	opacity: 1;
+
+}
+.gal-el.hover .overlay a.expand , .gal-col.hover .overlay a.expand  {
+  top: 50%;
+  margin-top: -30px;
+  opacity: 1;
+}
+
+.no-mrg {
+	margin: 0;
+}
+
+.open-gal {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  opacity: 0;
+  background: rgb(255, 255, 255);
+  background-size: 100% auto;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.clicked .open-gal{
+   	display: block;
+   	top: -1px;
+   	bottom: 0;
+   	left: 0;
+  	right: 0;
+  	z-index: 100;
+}
+
+
+.wemade-gallery.clicked .open-gal {
+  opacity: 1;
+}
+
+.open-gal .row, .open-gal .col-sm-6 {
+	height: 100%
+}
+
+.img-col {
+	background: #fff;
+	background: url('../img/ipad-alta.jpg') no-repeat center center;
+	background-size: 100% auto;
+	background-size: cover;
+}
+
+.info-col {
+  min-height: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.info-head {
+	margin-right: 17%;
+}
+
+.info-head hr {
+	border: 3px solid #ffb322;
+	margin: 20px 0;
+}
+
+.sl-bottom {
+	margin-top: 4em;
+}
 
 /* ==========================================================================
    Footer
@@ -440,6 +571,8 @@ footer {
 	background-color: #ffb322;
 	color: #000;
 }
+
+
 
 
 /* ==========================================================================
@@ -503,33 +636,75 @@ footer {
 	}
 	h1,
 	.h1 {
-	  font-size: 50px;
+	  font-size: 45px;
 	}
 	h2,
 	.h2 {
-	  font-size: 42px;
+	  font-size: 38px;
 	}
 	h3,
 	.h3 {
-	  font-size: 36px;
+	  font-size: 30px;
 	}
 	h4,
 	.h4 {
-	  font-size: 28px;
+	  font-size: 24px;
 	}
 	h5,
 	.h5 {
-	  font-size: 25px;
+	  font-size: 20px;
 	}
 	h6,
 	.h6 {
-	  font-size: 20px;
+	  font-size: 15px;
 	}
 	p {
-	  font-size: 18px;
+	  font-size: 16px;
 	}
 	.lead {
-	  font-size: 18px;
+	  font-size: 16px;
+	}
+
+	.title-h1 {
+		font-size: 5.5em;
+		width: 400px;
+	}
+
+	.mouse-icon {
+		width: 70%;
+	}
+
+	.mouse-see p{
+		font-weight: 300;
+		margin-top: 8px;
+		margin-bottom: 1.5em;
+		font-size: 15px;
+	}
+
+	.navbar li a {
+	    padding: 6px 23px;
+	    font-size: 16px;
+	    line-height: 1;
+	}
+
+	.navbar .logo, .navbar .logo img {
+    	width: 160px;
+	}
+
+	.navbar-fixed-top ul {
+		margin-top: 20px;
+	}
+
+	.container {
+		width: 1000px;
+	}
+	.big {
+		font-size: 99px;
+	}
+	.img-cap {
+	    width: 55px;
+	    left: 27px;
+	    top: 4px;
 	}
 }
 
@@ -541,15 +716,15 @@ footer {
 	}
 	h1,
 	.h1 {
-	  font-size: 46px;
+	  font-size: 44px;
 	}
 	h2,
 	.h2 {
-	  font-size: 40px;
+	  font-size: 36px;
 	}
 	h3,
 	.h3 {
-	  font-size: 32px;
+	  font-size: 30px;
 	}
 	h4,
 	.h4 {
