@@ -28,6 +28,8 @@ $( document ).ready(function() {
     $window = $(window);
     var navbar = $('#inicio nav'),
             navheight = navbar.outerHeight(true);
+            
+    resizeDiv();
 
     var animStat = 0;
 
@@ -58,9 +60,11 @@ $( document ).ready(function() {
             }
             
         }
-
-    resizeDiv();
     });
+
+$(window).load(function() {
+    resizeDiv();
+});
 
     $( ".mouse-see" ).click(function(event) {
         event.preventDefault();
