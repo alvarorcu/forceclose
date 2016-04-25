@@ -29,8 +29,6 @@ $( document ).ready(function() {
     var navbar = $('#inicio nav'),
             navheight = navbar.outerHeight(true);
 
-    resizeDiv();
-
     var animStat = 0;
 
     $window.scroll(function() {
@@ -59,7 +57,9 @@ $( document ).ready(function() {
                 $("body").css("padding-top", "0px");
             }
             
-        } 
+        }
+
+    resizeDiv();
     });
 
     $( ".mouse-see" ).click(function(event) {
@@ -95,7 +95,6 @@ function resizeDiv() {
     vnav = $('nav').height();
 
     galh = $('.gal-col').height();
-    console.log(galh);
 
     vcnt = $('title-h1').height();
     margin = (vph - vnav - vcnt) / 4;
