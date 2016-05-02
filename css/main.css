@@ -165,6 +165,7 @@ h3 {
 #inicio-d .container .row {
 	display: table-cell;
     vertical-align: middle;
+    height: 100%;
 }
 
 #inicio-d .container .row .col-sm-8 {
@@ -635,8 +636,6 @@ a.close-gal {
 	background-size: cover;
 }
 
-
-
 .info-col {
   min-height: 100%;
   text-align: left;
@@ -938,7 +937,6 @@ ol.boxes-list > li:hover:before {
     	min-height: 295px;
 	}
 }
-
 
 @media (max-width:1800px){
 	.col-client {
