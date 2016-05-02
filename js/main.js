@@ -23,10 +23,9 @@ var messages = [
 /*! Main */
 $( document ).ready(function() {
   
-    var start = $('#inicio'),
-            distance = $(window).height() + 10;
+    var distance = $(window).height() + 10;
     $window = $(window);
-    var navbar = $('#inicio nav'),
+    var navbar = $('.top-section nav'),
             navheight = navbar.outerHeight(true);
             
     resizeDiv();
@@ -112,5 +111,7 @@ function resizeDiv() {
         $(".wemade-gallery").css({'height': galh + 'px'});
     }
 
+    $('#inicio-u').css({'height': vph*.65 + 'px'});
+    $('#inicio-d').css({'height': vph*.35 + 'px'});
 }
 
