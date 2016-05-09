@@ -224,10 +224,11 @@ h3 {
 }
 
 .subtitle-inicio {
-	text-align:left;
 	padding-left: 58px;
 	margin-bottom: 70px;
 }
+
+
 /* ==========================================================================
    Digitaliza
    ========================================================================== */
@@ -502,7 +503,7 @@ a.close-gal {
 	margin: 0.4em auto 0.25em;
 	padding: 0;
 	color: #fff;
-    max-width: 1100px;
+  max-width: 1100px;
 }
 
 
@@ -532,6 +533,41 @@ a.close-gal {
   width: 50%;
   bottom: -9px;
   right: 25%;
+  background: black;
+}
+
+.medium {
+    width: 100%;
+    font-size: 82px;
+}
+
+.medium.black {
+  color:#000;
+  border-top: none;
+  padding: 0;
+  line-height: 1.25;
+  margin: 0 auto;
+  text-decoration: none;
+  position: relative;
+}
+
+.medium.black::after {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 20%;
+  bottom: -9px;
+  right: 40%;
+  background: black;
+}
+
+.top-lblack::after {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 60%;
+  top: 38px;
+  right: 20%;
   background: black;
 }
 
@@ -775,8 +811,8 @@ ol.boxes-list > li:hover:before {
 }
 
 .img-info img{
-	height: 100%;
 	width: auto;
+  height: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -927,6 +963,236 @@ ol.boxes-list > li:hover:before {
 }
 
 
+/* ==========================================================================
+   WEB
+   ========================================================================== */
+
+.image-title img{
+  width: 100%;
+  height: auto;
+}
+
+#inicio-d .web-top {
+    vertical-align: top !important;
+    height: 100%;
+    padding-top: 1em;
+}
+
+#necesitas p {
+  margin-top: 0.8em;
+  padding-left: 26px;
+}
+
+
+.web-developer img{
+  width: 90%;
+  height: auto;
+}
+
+.dweb-image {
+  text-align: center;
+  margin: 2em 0 3em;
+}
+
+.dweb-image img{
+    width: 50%;
+    height: auto;
+}
+
+
+.panel-default > .panel-heading {
+  background-color: #ffffff;
+  padding: 1.2em 1.6em;
+}
+
+.panel-default > .panel-heading.active {
+  background-color: #000000;
+}
+
+.panel-heading {
+  border: 2px solid #7F7F7F;
+  -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.panel-heading.active {
+  border-color: #000000;
+}
+
+.black-line {
+  border-top: 5px solid #000000;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#accordion-row {
+  margin-top: 2em;
+}
+
+#accordion-row .web-faq-col {
+  padding-right: 1.5em;
+}
+
+#accordion-row .accordion-col {
+  padding-left: 1.5em;
+}
+
+.fondo{
+  background-image: url("../img/web-bg");
+  background-repeat: no-repeat;
+}
+
+/* ==========================================================================
+   CONTROL
+   ========================================================================== */
+
+.control-bot {
+  position: relative;
+  height: 100%
+}
+
+.control-bot .vbottom{
+  margin-bottom: 35%;
+}
+
+.elige-button {
+    border: 1px solid #95989a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    width: 90%;
+    display: block;
+    position: relative;
+    height: auto;
+    text-align: center;
+    color: #7F7F7F;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+.elige-button:hover {
+   border: 1px solid #000000;
+   color: #ffffff;
+   background-color: #000000;
+}
+
+.elige-button img {
+  height: 180px;
+  width: auto;
+  margin: 1em auto;
+}
+
+.elige-button hr {
+  border: 3px solid #ffb322;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.elige-button h2 {
+  margin-top: 0;
+}
+
+#huella {
+  background: rgb(255, 179, 34);
+    background: url('../img/huella-bg.png') no-repeat center center;
+    background-size: 100% auto;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.negro{
+  color: #000;
+  text-align: center;
+}
+
+h2.negro {
+  margin-bottom: 1em;
+  padding-right: 22px;
+}
+
+.description-right {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.img-control{
+  width: 70%;
+  height: auto;
+  bottom: -3em;
+  position: relative;
+}
+
+.rayas{
+  color:#000;
+  border-top: solid 7px #000;
+  width: 34%;
+  line-height: 1;
+  margin:0 auto 1em;
+  margin-top: 1em;
+}
+
+.raya-amarilla{
+  border-top: solid 7px #FFB322;
+  width: 34%;
+  line-height: 1;
+  margin:0 auto 1em;
+  margin-top: 1em;
+}
+
+.cap {
+  width: 90%;
+  height: auto;
+}
+
+#soft-control {
+  background-color: #F4F4F4;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
+}
+
+
+/* ==========================================================================
+   CONTACTANOS
+   ========================================================================== */
+
+.label-cap {
+  position: relative;
+}
+
+.label-cap h2 {
+  text-align: left;
+}
+.img-cap-h2 {
+    position: absolute;
+    left: -21px;
+    top: 5px;
+    width: 45px;
+    height: auto;
+  }
+
+.formulario{
+  border: 2px solid #95989A;
+  -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+form {
+  width: 85%;
+  margin: 4em auto;
+  
+}
+  .group-form { 
+  position: relative; 
+  margin-bottom: 45px; 
+}
 
 /* ==========================================================================
    Media Queries
@@ -1000,6 +1266,10 @@ ol.boxes-list > li:hover:before {
 		margin-bottom: 50px;
 	}
 
+  #inicio-d .web-top {
+      padding-top: 2em;
+  }
+
 	.mouse-see p{
 		font-weight: 300;
 		margin-top: 8px;
@@ -1031,11 +1301,16 @@ ol.boxes-list > li:hover:before {
 	.big {
 		font-size: 99px;
 	}
+
+  .medium {
+    font-size: 72px;
+  }
 	.img-cap {
 	    width: 55px;
 	    left: 27px;
 	    top: 4px;
 	}
+
 	.row.narrow {
 		width: 90%;
 	}
@@ -1104,6 +1379,10 @@ ol.boxes-list > li:hover:before {
 	    font-size: 85px;
 	}
 
+  .medium {
+    font-size: 67px;
+  }
+
 	.row-info {
 		height: 600px;
 	}
@@ -1122,6 +1401,10 @@ ol.boxes-list > li:hover:before {
 	.big {
 	    font-size: 75px;
 	}
+
+  .medium {
+    font-size: 60px;
+  }
 }
 
 @media (max-width:1100px){
@@ -1202,6 +1485,10 @@ ol.boxes-list > li:hover:before {
 		font-size: 50px;
 		width: 250px;
 	}
+  #inicio-d .web-top {
+      padding-top: 0;
+      vertical-align: middle !important;
+  }
 }
 @media (max-width: 870px) {
 	.navbar li a {
@@ -1225,6 +1512,18 @@ ol.boxes-list > li:hover:before {
 	ol.boxes-list {
 	    margin-left: 6em;
 	}
+
+  .medium {
+    font-size: 50px;
+  }
+
+    #accordion-row .accordion-col {
+    padding-left: 0px;
+  }
+
+  .subtitle-inicio {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 700px) {
