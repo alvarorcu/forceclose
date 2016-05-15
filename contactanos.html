@@ -9,6 +9,7 @@
         <title>Contáctanos - Force Close | Improve with Technology</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
         
         <!-- Favicons -->
         <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
@@ -87,34 +88,95 @@
           <form>
             <div class="group-form">
               <input type="text"><span class="highlight"></span><span class="bar"></span>
-              <label>¿Cual es tu nombre?</label>
+              <label class="transition">
+                <img src="img/contact-icon1.png" class="icon">
+
+                ¿Cual es tu nombre?</label>
             </div>
             <div class="group-form">
             <input type="text"><span class="highlight"></span><span class="bar"></span>
-            <label>¿Cual es tu correo?</label>
+            <label class="transition">
+              <img src="img/contact-icon2.png" class="icon">
+              ¿Cual es tu correo?</label>
           </div>
             <div class="group-form">
               <input type="text"><span class="highlight"></span><span class="bar"></span>
-              <label>¿Tienes algún telefono</label>
+              <label class="transition">
+                <img src="img/contact-icon3.png" class="icon">
+                ¿Tienes algún telefono</label>
             </div>
             <div class="group-form">
-              <input type="email"><span class="highlight"></span><span class="bar"></span>
-              <label>¿Como se llama tu empresa?</label>
+              <input class="s" type="email"><span class="highlight"></span><span class="bar"></span>
+              <label class="transition">
+                <img src="img/contact-icon4.png" class="icon">
+                ¿Como se llama tu empresa?</label>
             </div>
+            <h1 class="que-buscas"><img src="img/cap.png" class="img-cap">dinos lo que buscas</h1>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="img-hover" id="aplicaciones">
+                    <center>
+                      <div class="check">
+                    <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
+                    <label for="checkboxG4" class="css-label radGroup1"></label>
+                  </div>
+                    <img src="img/mobile-i.png" class="buscar">
+                    <div class="underline" id="moviles"></div>
+                    <p id="movil">APLICACIONES MOVILES</p>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="img-hover" id="desarrollo">
+                  <center>
+                    <div class="check">
+                   <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" checked="checked"/>
+                    <label for="checkboxG5" class="css-label radGroup1"></label>
+                  </div>
+                  <img src="img/web-i.png" class="buscar-1">
+                  <div class="underline" id="web"></div>
+                  <p id="desarrollos">DESARROLLO WEB</p>
+                  </center>
+                  </div>
+                  
+              </div>  
+                <div class="col-md-4">
+                  <div class="img-hover" id="control">
+                    <center>
+                    <div class="check">   
+                    <input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox" />
+                    <label for="checkboxG6" class="css-label radGroup1"></label>
+                  </div>
+                    <img src="img/access-i.png" class="buscar-1">
+                    <div class="underline" id="acceso">
+                  </div>
+                    <p id="controles">CONTROL DE ACCESOS</p>
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </div>                      
              <div class="group-form">
               <input type="email"><span class="highlight"></span><span class="bar"></span>
-              <label>Explícanos un poco más</label>
+              <label class="transition">
+                <img src="img/contact-icon5.png" class="icon">
+                Explícanos un poco más</label>
             </div>
             <div class="label-cap"><img src="img/cap.png" class="img-cap-h2">
               <h2>¿Agendamos nuestra primera reunión?</h2>
             </div>      
              <div class="group-form">
               <input type="email"><span class="highlight"></span><span class="bar"></span>
-              <label>¿En que fecha seria la reunión?</label>
+              <label class="transition">
+                <img src="img/contact-icon6.png" class="icon">
+                ¿En que fecha seria la reunión?</label>
             </div>
             <div class="group-form">
               <input type="email"><span class="highlight"></span><span class="bar"></span>
-              <label>¿A que hora?</label>
+              <label class="transition">
+                <img src="img/contact-icon7.png" class="icon">
+                ¿A que hora?</label>
             </div>
             <center>
               <a class="btn btn-primarys" href="#" role="button">Enviar</a>
@@ -166,10 +228,70 @@
         </script>
 
         <script>
-        $( document ).ready(function() {
-
-
         
+        </script>
+        <script>
+        $( document ).ready(function() {
+          $('#aplicaciones').mouseover(function(){
+            $('#moviles').css("background-color", "#fff");
+          })
+
+          $('#aplicaciones').mouseleave(function(){
+            $('#moviles').css("background-color", "#FFC900");
+          })
+        });
+
+        $( document ).ready(function() {
+          $('#desarrollo').mouseover(function(){
+            $('#web').css("background-color", "#fff");
+          })
+
+          $('#desarrollo').mouseleave(function(){
+            $('#web').css("background-color", "#FFC900");
+          })
+        });
+
+        $( document ).ready(function() {
+          $('#control').mouseover(function(){
+            $('#acceso').css("background-color", "#fff");
+          })
+
+          $('#control').mouseleave(function(){
+            $('#acceso').css("background-color", "#FFC900");
+          })
+        });
+        </script>
+
+        <!--este es el hover de las letras avajo de las imagenes!-->
+      <script>
+        $( document ).ready(function() {
+          $('#aplicaciones').mouseover(function(){
+            $('#movil').css("color", "#fff");
+          })
+
+          $('#aplicaciones').mouseleave(function(){
+            $('#movil').css("color", "#7f7f7f");
+          })
+        });
+
+        $( document ).ready(function() {
+          $('#desarrollo').mouseover(function(){
+            $('#desarrollos').css("color", "#fff");
+          })
+
+          $('#desarrollo').mouseleave(function(){
+            $('#desarrollos').css("color", "#7f7f7f");
+          })
+        });
+
+        $( document ).ready(function() {
+          $('#control').mouseover(function(){
+            $('#controles').css("color", "#fff");
+          })
+
+          $('#control').mouseleave(function(){
+            $('#controles').css("color", "#7f7f7f");
+          })
         });
         </script>
     </body>

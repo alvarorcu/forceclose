@@ -395,7 +395,7 @@ a.expand {
     border-radius: 10px;
     margin: 1.5em 1%;
     text-align: center;
-    padding: 2.8em 3%;
+    padding: 1em 3%;
     padding-bottom: 0;
     width: 18%;
 }
@@ -1200,15 +1200,14 @@ form {
 
 @media (min-width:1800px){
 	.col-client {
-    	min-height: 295px;
+    	min-height: 261px;
 	}
 }
 
 @media (max-width:1800px){
 	.col-client {
-		padding: 2.8em 3%;
-	    padding-bottom: 1em;
-    	height: 17vw;
+		padding: 1em 3%;
+    	height: 18vw;
 	}
 }
 
@@ -1342,8 +1341,7 @@ form {
 		width: 950px;
 	}
 	.col-client {
-		padding: 1.8em 2%;
-    	height: 18vw;
+		padding: 1em 2%;
 	}
 	h1,
 	.h1 {
@@ -1394,7 +1392,7 @@ form {
 
 @media (max-width:1250px){
 	.col-client {
-		padding: 1.8em 2%;
+		padding: 1em 2%;
     	height: 19vw;
 	}
 
@@ -1500,9 +1498,10 @@ form {
 		width: 100%;
 	}
 	.col-client {
-		width: 98%;
-		padding: 3em 4%;
-		height: auto;
+		width: 46%;
+    padding: 1em 4%;
+    height: auto;
+    margin: 1.5em 2%;
 	}
 
 	#inicio-d .text-left, #inicio-d h3{

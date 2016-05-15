@@ -209,7 +209,6 @@ contactanos style
 input {
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
-	-webkit-appearance: none;
 	display: block;
 	color: #636363;
 	width: 100%;
@@ -223,7 +222,7 @@ input:focus { outline: none; }
 
 /* Label */
 
-label {
+.transition {
 	color: #999; 
 	font-size: 18px;
 	font-weight: normal;
@@ -321,4 +320,89 @@ input:focus ~ .highlight {
 .footer-2{
 	margin-left: 6em;
 	margin-bottom: 3em;
+}
+.icon{
+	width: 30px;
+}
+.img-hover{
+	border-radius: 3px;
+	border: 1px solid #848484;
+	width: 160px;
+	height: 221px;
+	margin-bottom: 3em;
+}
+.img-hover:hover{
+	border: 1px solid #FFC900;
+	background-color:#FFC900; 
+}
+
+.underline {
+	height: 3px;
+	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #FFC900;
+}
+
+.buscar{
+	width: 70px;
+	height: 100px;
+	margin-top: 2.3em;
+}
+.buscar-1{
+	width: 105px;
+	height: 100px;
+	margin-top: 2.3em;
+}
+.signo{
+	position: absolute;
+	left: 150px;
+	margin-top: 5px;
+}
+.que-buscas{
+	margin-bottom: 1em;
+	margin-left: -0.6em;
+}
+/*==============================================*/
+input[type=checkbox].css-checkbox {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+input[type=checkbox].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
+	padding-left:23px;
+	height:18px; 
+	display:inline-block;
+	line-height:18px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:18px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-position: 0 -18px;
+}
+label.css-label {
+	background-image:url(../img/check.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.check{
+	margin-top: 5px;
+	margin-left: 130px;
+	position: absolute;
 }
