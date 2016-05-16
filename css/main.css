@@ -1491,6 +1491,12 @@ form {
 }
 
 @media (max-width:768px){
+
+  .title-h1 {
+    font-size: 3.5em;
+    width: 280px;
+  }
+
 	.container {
 		width: 100%;
 	}
@@ -1520,9 +1526,17 @@ form {
   .subtitle-inicio {
     padding-left: 0;
   }
+
+  .navbar-inverse li:not(:last-child) {
+    border-right: none;
+  }
 }
 
 @media (max-width: 700px) {
+  .title-h1 {
+    font-size: 3em;
+    width: 269px;
+  }
 
   h1, .h1 {
   	font-size: 43px;
