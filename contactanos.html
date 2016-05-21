@@ -82,31 +82,32 @@
         </div>
       </div>
     </div>
-
+    <center><p id="returnmessage"></p></center>
+  
     <div class="section" id="contactanos">
       <div class="container">
         <div class="row narrow formulario">
           <form>
             <div class="group-form">
-              <input type="text"><span class="highlight"></span><span class="bar"></span>
+              <input type="text" id="nombre"><span class="highlight"></span><span class="bar"></span>
               <label class="transition">
                 <img src="img/contact-icon1.png" class="icon">
                 ¿Cual es tu nombre?</label>
             </div>
             <div class="group-form">
-            <input type="email"><span class="highlight"></span><span class="bar"></span>
+            <input type="email" id="correo"><span class="highlight"></span><span class="bar"></span>
             <label class="transition">
               <img src="img/contact-icon2.png" class="icon">
               ¿Cual es tu correo?</label>
           </div>
             <div class="group-form">
-              <input type="text"><span class="highlight"></span><span class="bar"></span>
+              <input type="text" id="telefono"><span class="highlight"></span><span class="bar"></span>
               <label class="transition">
                 <img src="img/contact-icon3.png" class="icon">
                 ¿Tienes algún telefono</label>
             </div>
             <div class="group-form">
-              <input class="s" type="text"><span class="highlight"></span><span class="bar"></span>
+              <input class="s" type="text" id="empresa"><span class="highlight"></span><span class="bar"></span>
               <label class="transition">
                 <img src="img/contact-icon4.png" class="icon">
                 ¿Como se llama tu empresa?</label>
@@ -115,50 +116,47 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="img-hover" id="aplicaciones">
+                  <div class="img-hover">
                     <center>
                       <div class="check">
-                    <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" />
-                    <label for="checkboxG4" class="css-label radGroup1"></label>
-                  </div>
-                    <img src="img/mobile-i.png" class="checkbox-icon">
-                    <div class="underline" id="moviles"></div>
-                    <h5 id="movil">APLICACIONES<br>MÓVILES</h5>
+                        <input type="checkbox" id="aplicacion" class="css-checkbox" />
+                      </div>
+                      <img src="img/mobile-i.png" class="checkbox-icon">
+                      <div class="underline" id="moviles"></div>
+                      <h5 id="movil">APLICACIONES<br>MÓVILES</h5>
                     </center>
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="img-hover" id="desarrollo">
+                  <div class="img-hover">
                   <center>
                     <div class="check">
-                   <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" checked="checked"/>
-                    <label for="checkboxG5" class="css-label radGroup1"></label>
-                  </div>
-                  <img src="img/web-i.png" class="checkbox-icon">
-                  <div class="underline" id="web"></div>
-                  <h5 id="desarrollos">DESARROLLO<br>WEB</h5>
+                     <input type="checkbox" id="desarrollo" class="css-checkbox"/>
+                    </div>
+                    <img src="img/web-i.png" class="checkbox-icon">
+                    <div class="underline" id="web"></div>
+                    <h5 id="desarrollos">DESARROLLO<br>WEB</h5>
                   </center>
                   </div>
                   
               </div>  
                 <div class="col-md-4">
-                  <div class="img-hover" id="control">
+                  <div class="img-hover">
                     <center>
                     <div class="check">   
-                    <input type="checkbox" name="checkboxG6" id="checkboxG6" class="css-checkbox" />
-                    <label for="checkboxG6" class="css-label radGroup1"></label>
-                  </div>
-                    <img src="img/access-i.png" class="checkbox-icon">
-                    <div class="underline" id="acceso">
-                  </div>
-                    <h5 id="controles">CONTROL DE<br>ACCESOS</h5>
+                      <input type="checkbox" id="control" class="css-checkbox"/>
+                    </div>
+                      <img src="img/access-i.png" class="checkbox-icon">
+                      <div class="underline" id="acceso">
+                    </div>
+                      <h5 id="controles">CONTROL DE<br>ACCESOS</h5>
                     </center>
                   </div>
                 </div>
               </div>
             </div>                      
              <div class="group-form">
-              <input type="email"><span class="highlight"></span><span class="bar"></span>
+              <input type="text" id="explicacion"><span class="highlight"></span><span class="bar"></span>
               <label class="transition">
                 <img src="img/contact-icon5.png" class="icon">
                 Explícanos un poco más</label>
@@ -169,7 +167,7 @@
             <div class="row">
               <div class="col col-sm-6">
                 <div class="group-form">
-                  <input type="text"><span class="highlight"></span><span class="bar"></span>
+                  <input type="text" id="fecha"><span class="highlight"></span><span class="bar"></span>
                   <label class="transition">
                     <img src="img/contact-icon6.png" class="icon">
                     ¿En que fecha seria la reunión?</label>
@@ -177,7 +175,7 @@
               </div>
               <div class="col col-sm-6">
                 <div class="group-form">
-                  <input type="text"><span class="highlight"></span><span class="bar"></span>
+                  <input type="text" id="hora"><span class="highlight"></span><span class="bar"></span>
                   <label class="transition">
                     <img src="img/contact-icon7.png" class="icon">
                     ¿A que hora?</label>
@@ -185,7 +183,7 @@
               </div>
             </div> 
             <center>
-              <a class="btn btn-primarys" href="#" role="button" id="send-form">Enviar</a>
+              <a class="btn btn-primarys" href="#inicio-d" role="button" id="send-form">Enviar</a>
             </center>
             
         </form>
@@ -260,8 +258,14 @@
                   });
 
               $(".img-hover").on( "click", function() {
-                  if ($(this).hasClass('active')) {$(this).removeClass('active');}
-                    else {$(this).addClass('active');}
+                  if ($(this).hasClass('active')) {
+                      $(this).removeClass('active');
+                      $(this).find(".check input").prop('checked', false);
+                    }
+                    else {
+                      $(this).addClass('active');
+                      $(this).find(".check input").prop('checked', true);
+                    }
               });
             });
         });
