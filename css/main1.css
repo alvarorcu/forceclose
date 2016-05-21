@@ -231,7 +231,7 @@ input:focus { outline: none; }
 
 /* active */
 
-input:focus ~ label, input.used ~ label {
+input:focus ~ label, input.used ~ label, input:valid ~ label  {
 	top: -20px;
   	transform: scale(.75);
   	left: -22px;
@@ -239,7 +239,7 @@ input:focus ~ label, input.used ~ label {
 
 /* active */
 
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
+input:focus ~ .bar:before, input:focus ~ .bar:after, input:valid ~ .bar:before, input:valid ~ .bar:after { width: 50%; }
 
 
 /* Highlight */
@@ -257,7 +257,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 /* active */
 
-input:focus ~ .highlight {
+input:focus ~ .highlight, input:valid ~ .highlight{
 	animation: inputHighlighter 0.3s ease;
 }
 
