@@ -305,6 +305,7 @@ input:focus ~ .highlight {
 .footer-1{
 	background: #FAFAFA;
 	margin-top: 3em;
+    padding: 2em 0 3em;
 }
 .footer-p{
 	color: #000;
