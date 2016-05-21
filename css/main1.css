@@ -196,11 +196,6 @@ control de accsesos style
 	margin-top: 3.5em;
 	margin-bottom: -2.7em;
 }
-.center{
-	text-align: center;
-	text-transform: uppercase;
-	margin-left: 2em; 
-}
 /*====================================================================
 contactanos style
 ======================================================================*/
@@ -224,12 +219,12 @@ input:focus { outline: none; }
 
 .transition {
 	color: #999; 
-	font-size: 18px;
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
-	left: 5px;
-	top: 10px;
+	font-size: 26px;
+    left: 5px;
+    top: 2px;
 	transition: all 0.2s ease;
 }
 
@@ -238,7 +233,8 @@ input:focus { outline: none; }
 
 input:focus ~ label, input.used ~ label {
 	top: -20px;
-  transform: scale(.75); left: -2px;
+  	transform: scale(.75);
+  	left: -22px;
 }
 
 /* active */
@@ -315,25 +311,46 @@ input:focus ~ .highlight {
 	font-size: 20px;
 }
 .footer-numero{
-	position: absolute;
+    position: relative;
+    display: inline-block;
 }
-.footer-2{
-	margin-left: 6em;
-	margin-bottom: 3em;
+.footer-mail{
+	margin-left: 25px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #7F7F7F;
 }
+
+.footer-mail a{
+    text-decoration: none;
+    color: #7F7F7F;
+}
+.footer-numero img, .footer-mail img {
+	width: 45px;
+	height: auto;
+	margin-right: 10px;
+}
+
 .icon{
 	width: 30px;
 }
 .img-hover{
-	border-radius: 3px;
-	border: 1px solid #848484;
-	width: 160px;
-	height: 221px;
-	margin-bottom: 3em;
+	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	-ms-border-radius: 10px;
+  	-o-border-radius: 10px;
+	border-radius: 10px;
+    border: 1px solid #848484;
+    width: 195px;
+    margin: 0 auto 2em;
+    padding: 1em 1em 0.3em;
 }
 .img-hover:hover{
-	border: 1px solid #FFC900;
-	background-color:#FFC900; 
+	border: 1px solid #FFB322;
+	background-color:#FFB322;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .underline {
@@ -341,28 +358,14 @@ input:focus ~ .highlight {
 	width: 70%;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background: #FFC900;
+	background: #FFB322;
 }
 
-.buscar{
-	width: 70px;
+.checkbox-icon{
 	height: 100px;
-	margin-top: 2.3em;
+    width: auto;
 }
-.buscar-1{
-	width: 105px;
-	height: 100px;
-	margin-top: 2.3em;
-}
-.signo{
-	position: absolute;
-	left: 150px;
-	margin-top: 5px;
-}
-.que-buscas{
-	margin-bottom: 1em;
-	margin-left: -0.6em;
-}
+
 /*==============================================*/
 input[type=checkbox].css-checkbox {
 	position:absolute;
@@ -392,7 +395,7 @@ input[type=checkbox].css-checkbox + label.css-label, input[type=checkbox].css-ch
 input[type=checkbox].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
 	background-position: 0 -18px;
 }
-label.css-label {
+/*label.css-label {
 	background-image:url(../img/check.png);
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -400,7 +403,7 @@ label.css-label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
+}*/
 .check{
 	margin-top: 5px;
 	margin-left: 130px;

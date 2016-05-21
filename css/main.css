@@ -307,17 +307,17 @@ a.close-overlay.hidden {
 
 a.expand {
 	font-family: 'Bebas Neue';
-    display: block;
-    position: absolute;
-    z-index: 100;
-    width: 165px;
-    height: 50px;
-    border: solid 3px #000;
-    text-align: center;
-    color: #000;
-    line-height: 46px;
-    font-weight: 500;
-    font-size: 30px;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 165px;
+  height: 50px;
+  border: solid 3px #000;
+  text-align: center;
+  color: #000;
+  line-height: 46px;
+  font-weight: 500;
+  font-size: 30px;
 }
 
 .overlay {
@@ -1194,6 +1194,24 @@ form {
   margin-bottom: 45px; 
 }
 
+.form-title {
+  margin-bottom: 0.5em;
+  margin-left: -0.6em;
+}
+
+form label {
+  font-family: 'Bebas Neue';
+}
+
+.transition img {
+  margin-right: 6px;
+}
+
+#send-form:hover, #send-form:focus, #send-form.focus {
+  color: #fff;
+  background-color: #000;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -1202,6 +1220,7 @@ form {
 	.col-client {
     	min-height: 270px;
 	}
+
 }
 
 @media (max-width:1800px){
@@ -1385,6 +1404,10 @@ form {
 	#contact-here h1, #contact-here .btn-primary {
 	    font-size: 35px;
 	}
+  .transition {
+    font-size: 22px;
+  }
+  
 }
 
 @media (max-width:1250px){
@@ -1480,6 +1503,10 @@ form {
       padding-top: 0;
       vertical-align: middle !important;
   }
+  .transition {
+    font-size: 20px;
+  }
+
 }
 @media (max-width: 870px) {
 	.navbar li a {
@@ -1488,6 +1515,7 @@ form {
   .col-client {
     height: 20vw;
   }
+
 }
 
 @media (max-width:768px){
@@ -1533,14 +1561,35 @@ form {
 }
 
 @media (max-width: 700px) {
+    #accordion-row .accordion-col {
+      padding-left: 1.5em;
+  }
   .title-h1 {
     font-size: 3em;
     width: 269px;
   }
 
   h1, .h1 {
-  	font-size: 43px;
+  	font-size: 34px;
   	padding-left: 26px;
+  }
+
+  #inicio-d h1, .text-row h1 {
+    padding-left: 0 !important;
+  }
+
+  .big {
+    font-size: 59px;
+  }
+
+  h4, .h4 {
+      font-size: 20px;
+  }
+
+  .img-cap {
+    width: 40px;
+    left: 19px;
+    top: 3px;
   }
 
   .white {
@@ -1553,6 +1602,26 @@ form {
 		padding-left: 0;
 		width: 80%;
 	}
+
+  .elige-button img {
+    height: 109px;
+  }
+  .elige-button h2{
+    font-size: 34px;
+  }
+  .elige-button {
+    min-height: 309px;
+  }
+
+  .info-importante h1 {
+    font-size: 27px;
+    padding-left: 0 !important;
+  }
+
+  .form-title {
+    padding-left: 0 !important;
+    text-align: center;
+  }
 }
 
 
