@@ -20,7 +20,9 @@ $(document).ready(function() {
 		}
 		$("#returnmessage").empty(); // To empty previous error/success message.
 		// Checking for blank fields.
-		if (name == '' || email == '' || phone == '' || contact == '' || date == '' || time == '') {
+
+		if (name == '' || email == '' || phone == '' || date == '' || time == '') {
+
 			alert("Por favor, llena los campos vacíos.");
 		} 
 		else if ( app == '' && web == '' &&  control == '' ) {
