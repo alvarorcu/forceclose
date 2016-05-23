@@ -107,8 +107,13 @@ function resizeDiv() {
     $('.bot-center').css({'left': (wpw - wbot) / 2 + 'px'});
 
     if ( $(".wemade-gallery").length ) {
+
+        if (wpw <= 768) {
+            $(".wemade-gallery").css({'height': galh*3 + 'px'});
+        }
+
+        else {$(".wemade-gallery").css({'height': galh + 'px'});}
  
-        $(".wemade-gallery").css({'height': galh + 'px'});
     }
 
     $('#inicio-u').css({'height': vph*.65 + 'px'});

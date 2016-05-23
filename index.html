@@ -4,12 +4,23 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Force Close | Improve with Technology</title>
-        <meta name="description" content="">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <title>Force Close | Mejora con Tecnología</title>
+        <meta name="description" content="En Force Close creemos que todas las empresas tienen un potencial nuevo por explotar." />
+        <meta name="keywords" content="force, close, forceclose, peru, apps, móviles, mobile, web, control, acceso, desarrollo" />
+        <meta name="author" content="Force Close" />
+
+        <meta property="og:site_name" content="Force Close - Mejora con Tecnología">
+        <meta property="og:image" content="http://forceclose.pe/img/webshare.png">
+        <meta property="og:description" content="En Force Close creemos que todas las empresas tienen un potencial nuevo por explotar.">
+        <meta property="og:url" content="http://forceclose.pe">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Force Close - Mejora con Tecnología">
+        <meta name="twiter:description" content="En Force Close creemos que todas las empresas tienen un potencial nuevo por explotar.">
+        <meta name="twitter:image:src" content="http://forceclose.pe/img/webshare.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicons -->
         <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
@@ -60,8 +71,8 @@
           </div><!-- /.navbar-collapse -->
       </nav>
       <div class="centered">
-        <h1 class="title-h1">IMPROVE WITH<br>
-        TECHNOLOGY
+        <h1 class="title-h1">MEJORA CON<br>
+        TECNOLOGÍA
         </h1>
       </div>
       <a class="mouse-see bot-center" href="#digitaliza">
@@ -226,8 +237,8 @@
             <div class="open-gal" id="gal-1">
                 <a class="close-gal">X</a>
                 <div class="row">
-                  <div class="col-xs-6 img-col"></div>
-                  <div class="col-xs-6 info-col">
+                  <div class="hidden-xs col-sm-6 img-col"></div>
+                  <div class="col-sm-6 info-col">
                     <div class="flex-container">
                       <div class="info-head">
                         <h2>IMPLEMENTACIÓN DE UN SISTEMA AVANZADO DE SPORTMATICS EN EL CLUB ALBORADA NATACIÓN.</h2>
@@ -247,8 +258,8 @@
             <div class="open-gal" id="gal-2">
                 <a class="close-gal">X</a>
                 <div class="row">
-                  <div class="col-xs-6 img-col"></div>
-                  <div class="col-xs-6 info-col">
+                  <div class="hidden-xs col-sm-6 img-col"></div>
+                  <div class="col-sm-6 info-col">
                     <div class="flex-container">
                       <div class="info-head">
                         <h2>AUTOMATIZACIÓN DE LAS OLIMPIADAS ESCOLARES SCHOOLGAMES EN LOS COLEGIOS DE SAN PEDRO Y VILLA CARITAS.</h2>
@@ -263,8 +274,8 @@
             <div class="open-gal" id="gal-3">
                 <a class="close-gal">X</a>
                 <div class="row">
-                  <div class="col-xs-6 img-col"></div>
-                  <div class="col-xs-6 info-col">
+                  <div class="hidden-xs col-sm-6 img-col"></div>
+                  <div class="col-sm-6 info-col">
                     <div class="flex-container">
                       <div class="info-head">
                         <h2>INSTALACIÓN DE SISTEMAS PRIVADOS DE PAGO Y ASISTENCIAS, UNIDO A PUNTOS DE VENTA EN EL COMPLEJO DE VIVIENDAS PETROLERO DE PETROPERÚ, UBICADO EN PUNTA ARENAS - TALARA.</h2>
@@ -281,8 +292,8 @@
             <div class="open-gal" id="gal-4">
                 <a class="close-gal">X</a>
                 <div class="row">
-                  <div class="col-xs-6 img-col"></div>
-                  <div class="col-xs-6 info-col">
+                  <div class="hidden-xs col-sm-6 img-col"></div>
+                  <div class="col-sm-6 info-col">
                     <div class="flex-container">
                       <div class="info-head">
                         <h2>FUIMOS PARTE DE LAS 4 PRIMERAS FERIAS DE TALARA PARA LA INDUSTRIA DEL PETROLEO.</h2>
@@ -298,8 +309,8 @@
             <div class="open-gal" id="gal-5">
                 <a class="close-gal">X</a>
                 <div class="row">
-                  <div class="col-xs-6 img-col"></div>
-                  <div class="col-xs-6 info-col">
+                  <div class="hidden-xs col-sm-6 img-col"></div>
+                  <div class="col-sm-6 info-col">
                     <div class="flex-container">
                       <div class="info-head">
                         <h2>AUTOMATIZACIÓN DE LAS OLIMPIADAS ESCOLARES SCHOOLGAMES EN LOS COLEGIOS DE SAN PEDRO Y VILLA CARITAS.</h2>
@@ -354,8 +365,8 @@
             $(".close-overlay").click(function(e){
                 e.preventDefault();
                 e.stopPropagation();
-                if ($(this).closest(".img").hasClass("hover")) {
-                    $(this).closest(".img").removeClass("hover");
+                if ($(this).closest(".hover").length) {
+                    $(this).closest(".hover").removeClass("hover");
                 }
             });
         } else {
