@@ -18,8 +18,8 @@ $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From:' . 'info@forceclose.pe' . "\r\n"; // Sender's Email
 $headers .= 'Cc:' . $email. "\r\n"; // Carbon copy to Sender
-$template = '<div style="padding:50px; color:white;">Hola ' . $name . ',<br/>'
-. '<br/>¡Gracias por contactarnos!.<br/><br/>'
+$template = '<div style="padding:50px; color:#7e7e7e;">Hola ' . $name . ',<br/>'
+. '<br/>¡Gracias por contactarnos!.<br/>Los datos que nos enviaste son:<br/><br/>'
 . 'Nombre:' . $name . '<br/>'
 . 'Correo:' . $email . '<br/>'
 . 'Número de contacto:' . $phone . '<br/><br/>'
@@ -32,7 +32,7 @@ $template = '<div style="padding:50px; color:white;">Hola ' . $name . ',<br/>'
 . 'Este es un correo de confirmación de envío.'
 . '<br/>'
 . 'Nos estaremos comunicando contigo lo antes posible.</div>';
-$sendmessage = "<div style=\"background-color:#7E7E7E; color:white;\">" . $template . "</div>";
+$sendmessage = "<div style=\"color:#7E7E7E;\">" . $template . "</div>";
 // Message lines should not exceed 70 characters (PHP rule), so wrap it.
 $sendmessage = wordwrap($sendmessage, 70);
 // Send mail by PHP Mail Function.

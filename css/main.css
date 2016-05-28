@@ -1352,6 +1352,10 @@ form label {
 	    width: 50px;
 	}
 
+  .footer-mail {
+    margin-left: 0;
+  }
+
 }
 
 

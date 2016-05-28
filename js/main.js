@@ -103,7 +103,19 @@ function resizeDiv() {
     margin = (vph - vnav - vcnt) / 4;
 
     $('#inicio').css({'height': vph + 'px'});
-    $('.centered').css({'margin-top': margin + 'px'});
+
+    if ( $(".centered").length ) {
+
+        if (wpw <= 400) {
+            $('.centered').css({'margin-top': margin / 2 + 'px'});
+        }
+        
+
+        else {$('.centered').css({'margin-top': margin + 'px'});}
+ 
+    }
+
+
     $('.bot-center').css({'left': (wpw - wbot) / 2 + 'px'});
 
     if ( $(".wemade-gallery").length ) {
@@ -111,6 +123,7 @@ function resizeDiv() {
         if (wpw <= 768) {
             $(".wemade-gallery").css({'height': galh*3 + 'px'});
         }
+
 
         else {$(".wemade-gallery").css({'height': galh + 'px'});}
  
